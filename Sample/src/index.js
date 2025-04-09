@@ -4,7 +4,7 @@ const { Server } = require('socket.io');
 const server = http.createServer();
 const io = new Server(server, {
   cors: {
-    origin: 'http://127.0.0.1:5500', // Update with frontend domain in production
+    origin: 'http://3.95.6.39:5500', // Update with frontend domain in production
   }
 });
 
@@ -71,6 +71,7 @@ io.on('connection', (socket) => {
     delete choices[socket.id];
   });
 });
+
 
 server.listen(8080, () => {
   console.log('Socket.IO server running on port 8080');
