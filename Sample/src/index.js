@@ -4,7 +4,7 @@ const { Server } = require('socket.io');
 const server = http.createServer();
 const io = new Server(server, {
   cors: {
-    origin: 'http://3.95.6.39:5500', // Update with frontend domain in production
+    origin: 'http://3.95.6.39:8080', // Update with frontend domain in production
   }
 });
 
